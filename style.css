@@ -1,0 +1,16 @@
+:root {
+--bg-cl:#c5dfea;
+--cl-X:#01243e;
+--cl-y:#b4ff00;
+--cl-p1:##FFFFFF;
+--cl-p2:#012340;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--bg-cl);
+    
+}
