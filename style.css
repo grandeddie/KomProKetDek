@@ -110,6 +110,53 @@ html {
       font-size: 14px;
       margin-top: 10px;
   }
+
+  .hero{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .text-wraper {
+    font-family: "PT Sans", serif;
+    font-size: 75px;
+    margin: 0 10px;
+    padding: 50px;
+    line-height: 65px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+
+  }
+
+  .double-yellow-underline {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .double-yellow-underline::before,
+  .double-yellow-underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background-color: transparent;
+    z-index: -1; /* Iza teksta */
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .double-yellow-underline::before {
+    bottom: -10px;
+    right: -20px;
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="10" viewBox="0 0 200 10"><path d="M0 5 C20 0, 40 10, 60 5 C80 0, 100 10, 120 5 C140 0, 160 10, 180 5" stroke="%23FFC107" stroke-width="10" fill="none" stroke-linecap="round"/></svg>');
+  }
+
+  .double-yellow-underline::after {
+    bottom: -20px;
+    right: -25px;
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="10" viewBox="0 0 200 10"><path d="M0 5 C15 10, 45 0, 75 5 C100 10, 130 0, 160 5 C180 10, 200 0, 220 5" stroke="%23FFC107" stroke-width="10" fill="none" stroke-linecap="round"/></svg>');
+  }
   
 
     @media (max-width: 768px) {
