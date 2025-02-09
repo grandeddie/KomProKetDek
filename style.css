@@ -3,7 +3,6 @@
 --cl-X:#01243e;
 --cl-y:#b4ff00;
 --cl-p1:##FFFFFF;
---cl-p2:#012340;
 }
 * {
     margin: 0;
@@ -13,6 +12,10 @@
   }
   html {
     scroll-behavior: smooth;
+  }
+  body{
+    color: var(--cl-X);
+    
   }
   .navbar {
     display: flex;
@@ -26,7 +29,6 @@
   .navbar .logo {
     font-size: 1.5em;
     font-weight: bold;
-    color: rgb(134, 88, 134);
     letter-spacing: 0.5px;
     font-size: xx-large;
   }
@@ -120,14 +122,32 @@
   }
 
   .text-wraper {
-    font-size: 75px;
     margin: 0 10px;
     padding: 50px;
-    line-height: 65px;
-    font-weight: bolder;
-    letter-spacing: 1px;
-
   }
+  .img-wraper{
+    width: 50%;
+    & div {
+      padding: 1.5em;
+      width: 33.3%;
+      & img{
+        width: 100%;
+      }
+  }
+}
+.cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  & .card-item{
+    width: 30%;
+    background-color: var(--bg-cl);
+    border-radius: 1.5em;
+    & img{
+      height: 200px;
+    }
+  }
+}
 
   .double-yellow-underline {
     position: relative;
