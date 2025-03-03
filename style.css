@@ -16,6 +16,10 @@
   body{
     color: var(--cl-X);
   }
+  header{
+    position: sticky;
+    top: 0;
+  }
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -68,11 +72,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
      max-width: 500px;
-  }
-  
-  h1 {
-    text-align: center;
-    margin-bottom: 20px;
   }
   
   .form-group {
@@ -141,9 +140,17 @@
   }
   .img-wraper{
     width: 50%;
+    
     position: relative;
     & div {
       padding: 1em;
+      & p{
+        position: relative;
+        top: .4em;
+        font-size: 1.5em;
+        border-radius: 1em;
+        background-color: ;
+      }
       & img{
         width: 100%;
         border-radius: 2em;
@@ -162,11 +169,14 @@
   top: 0;
   right: 0em;
   left:25em;
+  
   width: 40%;
+  
 }
 .down-left{
-  position: relative;
   width: 40%;
+  justify-self: left;
+  position: relative;
   right: 25em;
   left: 0;
   bottom: 20em;
